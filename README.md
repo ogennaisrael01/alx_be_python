@@ -1,3 +1,16 @@
+# Python Introduction
+
+This folder contains beginner-friendly Python scripts that demonstrate basic programming concepts.
+
+## Example Script
+
+- `basic_operations.py`  
+  Performs and prints the results of basic arithmetic operations (addition, multiplication, division, and subtraction) using two numbers.
+
+
+
+
+
 control flow folder
 # ALX Python Control Flow Examples
 
@@ -27,12 +40,4 @@ To run any script, use:
 python control-flow/<script_name>.py
 
 
-# Python Introduction
-
-This folder contains beginner-friendly Python scripts that demonstrate basic programming concepts.
-
-## Example Script
-
-- `basic_operations.py`  
-  Performs and prints the results of basic arithmetic operations (addition, multiplication, division, and subtraction) using two numbers.
 
