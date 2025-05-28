@@ -2,8 +2,8 @@
 # It then uses a match-case statement to provide a reminder message based on the priority and time constraint.
 
 task = input("Enter your task: ")
-priority = input("Priority(high/medium/low): ").lower()
-time_bound = input("Is this time-bound? (yes/no): ").lower()
+priority = input("Priority(high/medium/low): ")
+time_bound = input("Is it time-bound? (yes/no): ")
 
 match priority:
     case "high":
