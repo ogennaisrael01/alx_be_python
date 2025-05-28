@@ -6,7 +6,7 @@ active = True
 while active:
 
     for i in range(pattern_size):
-        result = "*" *  pattern_size
-        print(result, end="")
+        print("*" *  pattern_size, end="")
+        
         print()
     active = False
