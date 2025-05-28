@@ -1,10 +1,10 @@
 #  a simple calculator that takes two numbers and an operator from the user.
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
-operator = input("Choose the operation (+, -, *, /): ")
+operation = input("Choose the operation (+, -, *, /): ")
 
 # match-case statement to perform addition, subtraction, multiplication, or division.
-match operator: 
+match operation: 
     case "+":
         result = num1 + num2
         print(f"The result is {result}")
