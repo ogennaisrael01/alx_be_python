@@ -1,3 +1,6 @@
+# This script prompts the user to enter a task, its priority, and whether it is time-bound.
+# It then uses a match-case statement to provide a reminder message based on the priority and time constraint.
+
 task = input("Enter your task: ")
 priority = input("Priority(high/medium/low): ").lower()
 time_bound = input("Is this time-bound? (yes/no): ").lower()
