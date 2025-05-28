@@ -3,8 +3,7 @@ number = int(input("Enter a number to see its multiplication table: "))
 
 for i in range(1, 11):
     product = number * i
-    result = f"{number} * {i} = {product}"
-    print(result, end="")
+    print(f"{number} * {i} = {product}")
     print()
 
         
