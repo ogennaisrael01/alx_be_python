@@ -4,12 +4,11 @@
 task = input("Enter your task: ")
 priority = input("Priority(high/medium/low): ")
 time_bound = input("Is it time-bound? (yes/no): ")
-
+custom_reminder = input("Enter a custom reminder message (or press enter to skip): ")
 match priority:
     case "high":
-        remminder =f"Note: '{task}' is a high priority task and requires immediate attention today!"
         if time_bound == "yes":
-            print(remminder)
+            print(f"Note: '{task}' is a high priority task and requires immediate attention today!")
         else:
             print(f"Note: '{task}' requires attention but not time bound")
 
@@ -27,3 +26,7 @@ match priority:
 
     case _:
         print("Error")
+        
+if custom_reminder:
+    print(f"Reminder: {custom_reminder}")
+
