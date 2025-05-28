@@ -7,8 +7,9 @@ time_bound = input("Is it time-bound? (yes/no): ")
 
 match priority:
     case "high":
+        remminder =f"Note: '{task}' is a high priority task and requires immediate attention today!"
         if time_bound == "yes":
-            print(f"Note: '{task}' is a high priority task and requires immediate attention today!")
+            print(remminder)
         else:
             print(f"Note: '{task}' requires attention but not time bound")
 
