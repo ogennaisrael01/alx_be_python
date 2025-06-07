@@ -4,9 +4,9 @@ def display_current_datetime():
     """
     Current datetime
     """
-    current_date = datetime.now().strftime("%Y-%m-%d   %H:%M:%S")
+    current_date = datetime.now()
 
-    return current_date
+    return current_date.strftime("%Y-%m-%d   %H:%M:%S")
 
 
 def calculate_future_date():
