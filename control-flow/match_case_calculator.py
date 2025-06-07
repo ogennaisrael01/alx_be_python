@@ -19,9 +19,7 @@ match operation:
             result = num1 / num2
             print(f"The result is {result}")
         except ZeroDivisionError: # handles error if dividing by zero is attempted
-            print("Can't divide by zero")
-    
-        
+            print("Can't divide by zero")   
     case _:
         print("Don't have a calculation on this operator") # notifies user if unsurppoted operator is entered 
 
