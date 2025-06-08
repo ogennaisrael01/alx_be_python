@@ -16,4 +16,3 @@ def perform_operation(num1, num2, operation):
         return num1 / num2
     else:
          print("Don't have a calculation on this operator")
-           
