@@ -1,6 +1,6 @@
 # Robust division calculator
 
-def safe_divide(numerator, denominator) -> None:
+def safe_divide(numerator: float, denominator: float) -> None:
     try:
         result = numerator / denominator
         return f"The result of the division is {result}"
