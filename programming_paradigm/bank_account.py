@@ -16,12 +16,9 @@ class BankAccount:
     def withdraw(self, amount):
         """
         A method to withdraw from accoount
-        """      
-        if amount < self.account_balance:
-           print("Insufficient funds.") 
-        else:
-            self.account_balance -= amount
-            return True
+        """   
+        self.account_balance -= amount
+        return True
        
     def display_balance(self):
         print(f"Current Balance: {self.account_balance}.")
