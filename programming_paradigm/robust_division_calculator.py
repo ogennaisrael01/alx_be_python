@@ -1,8 +1,8 @@
 # Robust division calculator
 
-def safe_divide(numerator, denomenator) -> None:
+def safe_divide(numerator, denominator) -> None:
     try:
-        result = numerator / denomenator
+        result = numerator / denominator
         return f"The result of the division is {result}"
     except ZeroDivisionError:
         print("Error: cant divide by zero!")
