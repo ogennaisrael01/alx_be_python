@@ -24,14 +24,14 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(4, 2), 2)
         
     
-    def test_multiply(self):
+    def test_multiplication(self):
         """
         Test for simple multiplication
         """
         self.assertEqual(self.calc.multiply(2, 2), 4)
         self.assertEqual(self.calc.multiply(5, 5), 25)
 
-    def test_divide(self):
+    def test_division(self):
         """
         Test for simple division
         """
