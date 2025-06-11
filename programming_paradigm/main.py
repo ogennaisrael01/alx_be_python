@@ -6,9 +6,9 @@ def main():
         print("Usage: python main.py <numerator> <denominator>")
         sys.exit(1)
     try:
-        numerator = float(sys.argv[1])
-        denominator = float(sys.argv[2])
-        result = safe_divide(numerator, denominator)
+        numerator = (sys.argv[1])
+        denominator = (sys.argv[2])
+        result = safe_divide(float(numerator), float(denominator))
         print(result)
     except ValueError:
         print("Error: enter numeric values")
