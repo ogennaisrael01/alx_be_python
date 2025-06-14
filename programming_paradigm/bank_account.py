@@ -1,8 +1,8 @@
 # A simple bank account 
 
 class BankAccount:
-    def __init__(self, account_balance=float(0)):
-        self.account_balance = account_balance
+    def __init__(self):
+        self.account_balance = float(0)  # Initialize account balance to 0.00
 
     def deposit(self, amount):
         """
@@ -35,4 +35,15 @@ class BankAccount:
         """"
         A method to display the current balance
     """
-        print(f"Current Balance: {self.account_balance}.")
+        print(f"Current Balance: {self.account_balance:.2f}")
+
+account = BankAccount()  # Example starting balance
+account.deposit(50)
+account.display_balance()
+account.withdraw(30)
+account.display_balance()
+account.withdraw(150)
+account.display_balance()
+account.deposit(-20)
+account.display_balance()
+account.withdraw(-10)
