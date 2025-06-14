@@ -7,7 +7,11 @@ class Book:
         # Initialize a Book with title, author, and checked-out status
         self.title = title
         self.author = author
-        self._is_checked_out = False  # Initialize the Library with an empty list of books
+        self._is_checked_out = False
+
+    def return_book(self):
+        # Return the book, setting its checked-out status to False
+        self._is_checked_out = False
 
 
 class Library:
