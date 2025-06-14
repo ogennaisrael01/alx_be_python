@@ -8,17 +8,35 @@ class BankAccount:
         """"
         A method to deposit to acoount
         """
-        if amount <= 0:
-            return False
-        else:
-            self.account_balance += amount
+        try:
+            if amount <= 0:
+                return False
+            else:
+                self.account_balance += amount
+        except ValueError:
+            print(f"Error: Invalid amount {amount}. Please enter a positive number.")
 
     def withdraw(self, amount):
         """
         A method to withdraw from accoount
-        """   
-        self.account_balance -= amount
-        return True
-       
+        """  
+        try: 
+            if amount <= 0:
+                return False
+            if amount > self.account_balance:
+                print("Insufficient funds.")
+                return False
+            else:
+                self.account_balance -= amount
+                return True
+        except ValueError as e:
+            print(f"Error: {e}")
+
     def display_balance(self):
+        """"
+        A method to display the current balance
+    """
         print(f"Current Balance: {self.account_balance}.")
+
+    def __str__(self):
+        return f"BankAccount(balance={self.account_balance})"
