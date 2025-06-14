@@ -1,12 +1,12 @@
 # A simple bank account 
 
 class BankAccount:
-    def __init__(self, account_balance=0):
+    def __init__(self, account_balance=float(0)):
         self.account_balance = account_balance
 
     def deposit(self, amount):
-        """"
-        A method to deposit to acoount
+        """
+        A method to deposit to account
         """
         try:
             if amount <= 0:
