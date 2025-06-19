@@ -9,6 +9,3 @@ class Calculator:
     def multiply(cls, a, b):
         print(f"Calculation type: {cls.calculation_type}")
         return a * b
-    
-result = Calculator.multiply(4, 4)
-print(result)
