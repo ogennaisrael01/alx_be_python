@@ -28,14 +28,14 @@ class PrintBook(Book):
 class Library:
     def __init__(self):
         # Library with an empty list of books
-        self.book = []
+        self.books = []
 
     def add_book(self, book):
         # Add books to the library. this include Book, Ebook, and PrintBook
-        self.book.append(book)
+        self.books.append(book)
         
     def list_books(self):
         # List all  available Books In the library
-        for item in self.book:
+        for item in self.books:
             print (f"{type(item).__name__}: {item}")
 
